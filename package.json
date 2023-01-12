@@ -30,6 +30,7 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
+    "@prettier/plugin-pug": "^2.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -42,7 +43,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "ndb": "^1.1.5",
     "nodemon": "^2.0.19",
-    "prettier": "^1.17.0"
+    "prettier": "^1.19.1"
   },
   "engines": {
     "node": ">=10.0.0"

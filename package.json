@@ -30,7 +30,6 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^2.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",

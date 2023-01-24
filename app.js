@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const mongosanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const cors = require('cors');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -20,6 +21,10 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, './views'));
 //  1) GLOBAL MIDDLEWARES
+// Implement Cors
+app.use(cors());
+app.options('*', cors());
+
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
 // Set Security HTTP headers
